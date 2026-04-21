@@ -1,0 +1,37 @@
+# --- Archivos Binarios y Temporales ---
+Binaries/
+Intermediate/
+DerivedDataCache/
+Saved/
+Build/
+
+# --- Reglas de Excepción (Whitelist) ---
+!Config/
+
+# No ignorar archivos de iconos en Build
+!Build/**/*.ico
+
+# No ignorar archivos de lista negra de empaquetado
+!Build/*/
+!Build/*/**
+!Build/*/PakBlacklist*.txt
+
+# --- Cabeceras Precompiladas y Librerías ---
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.lai
+*.la
+*.a
+*.lib
+
+# --- Ejecutables ---
+*.exe
+*.out
+*.app
+*.ipa
+
+# --- Datos de compilación de mapas ---
+*_BuiltData.uasset
